@@ -15,6 +15,7 @@ https://vlasmar.github.io/Vanilla-To-Do-App
 
 ---
 
+## 🧱 Features
 ✅ Add tasks
 ✔️ Mark tasks as completed
 ❌ Delete tasks
