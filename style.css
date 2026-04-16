@@ -1,0 +1,120 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    background-color: rgb(46, 46, 46);
+    text-align: center;
+    color: aliceblue;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 5rem 0;
+}
+
+#new-task {
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid aliceblue;
+    width: 70%;
+    margin-bottom: 2rem;
+    color: #c8cae1;
+}
+
+#submit {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+#submit:hover {
+  cursor: pointer;
+  filter: brightness(0.7);
+}
+
+#tasks li {
+    list-style-type: none;
+    margin: 0 20rem;
+    padding: 1rem 0;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.6);
+    display: grid;
+    grid-row-gap: 1rem;
+    grid-template-columns: 1fr auto auto;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0.5rem;
+    overflow-x: auto;
+}
+
+.checkbox-title {
+    display: flex;
+    padding: 0.4rem;
+}
+
+.checkbox-title input {
+    margin: 0.3rem;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] ~ label {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid grey;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+input[type="checkbox"] ~ p {
+    font-size: 1.4rem;
+}
+
+input[type="checkbox"] ~ label:hover {
+    border: 1px solid purple;
+}
+
+input[type="checkbox"]:checked ~ label {
+    background: linear-gradient(135deg, rgb(137, 84, 92) 0, purple);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type="checkbox"]:checked ~ p {
+    text-decoration: line-through;
+    color: var(--placeholder-color);
+}
+
+.btn {
+    height: 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 0.9rem;
+    background-color: white;
+    color: rgb(46, 46, 46);
+    border-color: transparent;
+    padding: 0.5rem;
+    margin: 0;
+    margin-left: 0.2rem;
+    border: 1px solid white;
+    border-radius: 0.3rem;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(154, 27, 39);
+  border: 1px solid rgb(154, 27, 39);
+}
